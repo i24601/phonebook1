@@ -91,7 +91,6 @@ public class PhoneDao {
 		return getPersonList("");
 	}
 
-	// 사람 리스트(검색할때)
 	public List<PersonVo> getPersonList(String keword) {
 		List<PersonVo> personList = new ArrayList<PersonVo>();
 
@@ -142,6 +141,7 @@ public class PhoneDao {
 		return personList;
 
 	}
+
 
 	// 사람 수정
 	public int personUpdate(PersonVo personVo) {

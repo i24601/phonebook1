@@ -6,10 +6,8 @@
 <%@ page import="com.javaex.vo.PersonVo"%>
 
 <%
-	PhoneDao phoneDao = new PhoneDao();
-phoneDao.getPersonList();
+PhoneDao phoneDao = new PhoneDao();
 List<PersonVo> pList = phoneDao.getPersonList();
-System.out.println(pList.toString());
 %>
 
 <!DOCTYPE html>
@@ -19,6 +17,7 @@ System.out.println(pList.toString());
 <title>전화번호</title>
 </head>
 <body>
+
 	<h1>전화번호 리스트</h1>
 	<p>입력한 정보 내역입니다</p>
 	<%
